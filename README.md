@@ -19,6 +19,7 @@ This repository is a compilation of writeups for as many of the challenges as I 
 [Pandoras Box <easy>](pwn/pandoras_box/README.md)\
 [Kana <medium>](pwn/kana/README.md)\
 [Void <medium>](pwn/void/README.md)\
+[Control Room <hard>](pwn/control_room/README.md)\
 [Math Door <hard>](pwn/math_door/README.md)\
 [Runic <insane>](pwn/runic/README.md)
 
