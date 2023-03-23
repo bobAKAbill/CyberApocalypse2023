@@ -1,4 +1,4 @@
-#Cyber Apocalypse 2023#
+# Cyber Apocalypse 2023
 
 ![My dog ate the banner](./CyberApocalypseBanner.jpg)
 Credits [HTB](http://ctf.hackthebox.com)
