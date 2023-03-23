@@ -2,7 +2,7 @@
 
 > As Pandora made her way through the ancient tombs, she received a message from her contact in the Intergalactic Ministry of Spies. They had intercepted a communication from a rival treasure hunter who was working for the alien species. The message contained information about a digital portal that leads to a software used for intercepting audio from the Ministry's communication channels. Can you hack into the portal and take down the aliens counter-spying operation?
 >
->  Readme Author: [gsmith257](https://s1n1st3r.gitbook.io/ctf-writeups/htb-cyber-apocalypse-2023/2023-htb-cyber-apocalypse-challenges/web-spybug)
+>  Readme Author: [gsmith257](https://github.com/gsmith257-cyber)
 >
 > [`web_spybug.zip`](web_spybug.zip)
 
