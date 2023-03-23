@@ -1,6 +1,6 @@
 #Cyber Apocalypse 2023#
 
-![sdfsdf](./CyberApocalyseBanner.jpg)
+![My dog ate the banner](./CyberApocalypseBanner.jpg)
 Credits [HTB](http://ctf.hackthebox.com)
 
 ## Warmup
