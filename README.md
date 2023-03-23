@@ -4,7 +4,7 @@
 Credits [HTB](http://ctf.hackthebox.com)
 
 ## Intro
-Great CTF! My team placed 258th overall with 10600 points (only 36/74 of the flags)
+Great CTF! My team placed 258th overall with 10600 points (only 36/74 of the flags though)
 This repository is a compilation of writeups for as many of the challenges as I could find, both from my team and from others. If the README for the challenge says it's a template, I couldn't find one. Merry Flagging!
 
 ## Warmup
