@@ -25,3 +25,6 @@ $ curl -X POST -H "Content-Type:application/json" -d '{"query":"mutation($userna
 
 Now admins password is set to `test` we can login as `admin` and retrieve the flag.
 ![flag](image002.png)
+
+## Flag
+HTB{1d0r5_4r3_s1mpl3_4nd_1mp4ctful!!}

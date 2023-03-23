@@ -21,5 +21,7 @@ When opening the hosted site, we see a keypad where we can enter values. By look
         }
 </script>
 ```
-
 ![pin](image001.png)
+
+## Flag
+HTB{V13w_50urc3_c4n_b3_u53ful!!!}

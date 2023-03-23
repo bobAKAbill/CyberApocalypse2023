@@ -32,3 +32,5 @@ password: test
 
 After logging in we find the flag:
 ![flag](image001.png)
+## Flag
+HTB{p4r4m3t3r1z4t10n_1s_1mp0rt4nt!!!}
