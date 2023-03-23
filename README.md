@@ -1,10 +1,10 @@
 #Cyber Apocalypse 2023#
 
-![sdfsdf](CyberApocalyseBanner.jpg)
+![sdfsdf](./CyberApocalyseBanner.jpg)
 Credits [HTB](http://ctf.hackthebox.com)
 
 ## Warmup
-[Warmup <sanitycheck>](warmup/warmup/README.md)\
+[Warmup <sanitycheck>](warmup/warmup/README.md)
 
 ## Pwn
 
@@ -16,7 +16,7 @@ Credits [HTB](http://ctf.hackthebox.com)
 [Kana <medium>](pwn/kana/README.md)\
 [Void <medium>](pwn/void/README.md)\
 [Math Door <hard>](pwn/math_door/README.md)\
-[Runic <insane>](pwn/runic/README.md)\
+[Runic <insane>](pwn/runic/README.md)
 
 ## Web
 
@@ -28,13 +28,13 @@ Credits [HTB](http://ctf.hackthebox.com)
 [Spybug <medium>](web/spybug/README.md)\
 [Trapped Source <very easy>](web/trapped_source/README.md)\
 [TrapTrack <hard>](web/traptrack/README.md)\
-[Unearthly Shop <hard>](web/unearthly_shop/README.md)\
+[Unearthly Shop <hard>](web/unearthly_shop/README.md)
 
 ## Blockchain
 
 [Navigating the Unknown <very easy>](blockchain/navigation_the_unknown/README.md)\
 [Shooting 101 <very easy>](blockchain/shooting_101/README.md)\
-[The Art of Deception <easy>](blockchain/the_art_of_deception/README.md)\
+[The Art of Deception <easy>](blockchain/the_art_of_deception/README.md)
 
 ## Hardware
 
@@ -42,7 +42,7 @@ Credits [HTB](http://ctf.hackthebox.com)
 [Timed Transmission <very easy>](hardware/timed_transmission/README.md)\
 [Debug <easy>](hardware/debug/README.md)\
 [Secret Code <easy>](hardware/secret_code/README.md)\
-[HM74 <medium>](hardware/hm74/README.md)\
+[HM74 <medium>](hardware/hm74/README.md)
 
 ## Reversing
 
@@ -55,7 +55,7 @@ Credits [HTB](http://ctf.hackthebox.com)
 [Gimmick DSP <medium>](reversing/gimmick_dsp/README.md)\
 [Somewhat Linear <hard>](reversing/somewhat_linear/README.md)\
 [Vessel Cartographer <hard>](reversing/vessel_cartographer/README.md)\
-[Analogue Signal Processing <insane>](reversing/analogue_signal_processing/README.md)\
+[Analogue Signal Processing <insane>](reversing/analogue_signal_processing/README.md)
 
 ## ML
 
@@ -65,7 +65,7 @@ Credits [HTB](http://ctf.hackthebox.com)
 [On The Rescue <medium>](ml/on_the_rescue/README.md)\
 [Vision Chip <medium>](ml/vision_chip/README.md)\
 [Reading the Stars <hard>](ml/reading_the_stars/README.md)\
-[The Trial of the Sky <insane>](ml/the_trial_of_the_sky/README.md)\
+[The Trial of the Sky <insane>](ml/the_trial_of_the_sky/README.md)
 
 ## Misc
 
@@ -76,7 +76,7 @@ Credits [HTB](http://ctf.hackthebox.com)
 [Restricted <easy>](misc/restricted/README.md)\
 [Nehebkaus Trap <medium>](misc/nehebkaus_trap/README.md)\
 [Calibrator <hard>](misc/calibrator/README.md)\
-[The Chasms Crossing Conundrum <hard>](misc/the_chasms_crossing_conundrum/README.md)\
+[The Chasms Crossing Conundrum <hard>](misc/the_chasms_crossing_conundrum/README.md)
 
 ## Forensics
 
@@ -89,7 +89,7 @@ Credits [HTB](http://ctf.hackthebox.com)
 [Relic Maps <medium>](forensics/relic_maps/README.md)\
 [Bashic Ransomware <hard>](forensics/bashic_ransomware/README.md)\
 [Interstellar C2 <hard>](forensics/interstellar_c2/README.md)\
-[Pandoras Bane <insane>](forensics/pandoras_bane/README.md)\
+[Pandoras Bane <insane>](forensics/pandoras_bane/README.md)
 
 ## Crypto
 
@@ -102,4 +102,4 @@ Credits [HTB](http://ctf.hackthebox.com)
 [Elliptic Labrynth <medium>](crypto/elliptic_labrynth/README.md)\
 [Elliptic Labrynth Revenge <medium>](crypto/elliptic_labrynth_revenge/README.md)\
 [Biased Heritage <hard>](crypto/biased_heritage/README.md)\
-[Blokechain <insane>](crypto/blokechain/README.md)\
+[Blokechain <insane>](crypto/blokechain/README.md)
