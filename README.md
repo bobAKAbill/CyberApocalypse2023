@@ -8,12 +8,12 @@ Great CTF! My team placed 258th overall with 10600 points (only 36/74 of the fla
 This repository is a compilation of writeups for as many of the challenges as I could find, both from my team and from others. If the README for the challenge says it's a template, I couldn't find one. Merry Flagging!
 
 ## Warmup
-[Warmup <sanitycheck>](warmup/warmup/README.md)
+[Warmup <sanitycheck>](warmup/README.md)
 
 ## Pwn
 
 [Getting_started <very easy>](pwn/getting_started/README.md)\
-[Initialise Connection <very easy>](pwn/initialise_connection/README.md)\
+[Initialise Connection <very easy>](pwn/initialize_connection/README.md)\
 [Questionnaire <very easy>](pwn/questionnaire/README.md)\
 [Labyrinth <easy>](pwn/labyrinth/README.md)\
 [Pandoras Box <easy>](pwn/pandoras_box/README.md)\
