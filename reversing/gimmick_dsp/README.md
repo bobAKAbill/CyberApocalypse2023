@@ -59,3 +59,7 @@ filtered_signal -= spectral_subtracted_padded
 # save the output
 sf.write('flag.wav', filtered_signal, sample_rate)
 ```
+Careful, you still need to reverse it ;)
+
+## Flag
+HTB{d1d_y0u_bl@ck_b0x_th1s?}

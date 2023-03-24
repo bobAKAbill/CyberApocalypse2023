@@ -6,9 +6,9 @@
 >
 >  Readme Author: TheBadGod provided the code, [bobAKAbill](github.com/bobakabill) wrote the rest
 > THE ZIP WAS TOO LARGE TO PUT INTO GITHUB
-> [`rev_analogue_signal_processing.zip`](rev_analogue_signal_processing.zip)
+> [`rev_analogue_signal_processing.zip`](https://drive.google.com/file/d/11ggbYH_GbZDY1CtsQ4i7T1v_xwgmxLpR/view?usp=sharing)
 
-Download the flag wav, run the python, wait
+Download the zip, put the below python next to `circuit.py`, run the python, wait
 
 ```
 import numpy as np
@@ -87,3 +87,5 @@ while True:
     # actually apply the last char
     vins = simulate_chained_circuits([ZLCircuit(1j * ord(flag[-1]), 1)], np.array(vins, copy=True), duration, SAMPLE_RATE)[0]
 ```
+## Flag
+HTB{p0le_dance}
