@@ -5,7 +5,7 @@
 > Before the aliens had computers, they used analogue circuits to communicate. One of their favourite tricks was to hide messages in the communication equipment itself, which often used inductors and high-tech, complex resistors. Using a few samples from different locations in the circuit, can you figure out the parameters of the circuitry?
 >
 >  Readme Author: Om012 provided the code, [bobAKAbill](github.com/bobakabill) wrote the rest
-> I COULDN'T GET THE ZIP
+>
 > [`rev_gimmick_dsp.zip`](rev_gimmick_dsp.zip)
 
 Download the flag, run the python, listen

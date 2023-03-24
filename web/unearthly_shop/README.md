@@ -3,7 +3,6 @@
 >
 >  Readme Author: [mukarramkhalid](https://mukarramkhalid.com/hack-the-box-cyber-apocalypse-2023-the-cursed-mission-writeups)
 >
-> I COULDN'T GET THE ZIP. DON'T TRY TO DOWNLOAD
 > [`web_unearthly_shop.zip`](web_unearthly_shop.zip)
 
 ![](image-20230323032618322.png)

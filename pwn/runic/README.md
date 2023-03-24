@@ -1,7 +1,6 @@
 # Runic - HTB Cyber Apocalypse 2023
 > Writeup Author: [Mymaqn](https://github.com/Mymaqn)
 >
-> COULDN'T DOWNLOAD ZIP FROM HTB, BELOW LINK DOES NOT WORK
 > [`pwn_runic.zip`](pwn_runic.zip)
 
 ## Description
