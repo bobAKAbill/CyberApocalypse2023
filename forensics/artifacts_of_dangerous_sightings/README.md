@@ -32,3 +32,6 @@ At the end of that I had this file: {Authors note: I'm not including the file, i
 
 With this I could just change the iex at the end of the file to an echo and get the contents by running it. And thats what I did.
 ![](spaces_1uhiofTFnZvCKEvs4fJk_uploads_4ehmEIqvL46bfwEl49yR_htbCyberApoc23_Artifacts_of_blahblahFlag.webp)
+
+## Flag
+HTB{Y0U_C4nt_St0p_Th3_Alli4nc3}
