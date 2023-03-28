@@ -25,11 +25,11 @@ This repository is a compilation of writeups for as many of the challenges as I 
 
 ## Web
 
-[Didactic Octo Paddles (medium)](web/didactic_octo_paddles/README.md)\
 [Drobots (very easy)](web/drobots/README.md)\
 [Gunhead (very easy)](web/gunhead/README.md)\
 [Orbital (easy)](web/orbital/README.md)\
 [Passman (easy)](web/passman/README.md)\
+[Didactic Octo Paddles (medium)](web/didactic_octo_paddles/README.md)\
 [Spybug (medium)](web/spybug/README.md)\
 [Trapped Source (very easy)](web/trapped_source/README.md)\
 [TrapTrack (hard)](web/traptrack/README.md)\
